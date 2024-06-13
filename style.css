@@ -18,15 +18,82 @@ a {
     
 }
 
+
+/* Header */
 .header {
     background-color: red;
-    grid-column: 2/-1;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
 }
+
+.header .search-bar {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    padding-right: 2vw;
+}
+
+.header .search-bar input{
+   height: 60%;
+   border-radius: 20px;
+   border: none;
+   padding-left: 20px;
+   font-size: large;
+}
+
+.header .search-bar input:focus {
+    outline: none;
+}
+
+.header .user-info {
+    justify-self: right;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    text-wrap: nowrap;
+}
+
+.header .left {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+}
+
+.header .right {
+    align-self: center;
+    justify-self: right;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: right;
+}
+
+.header .right button {
+    width: 90%;
+    height: 40%;
+    border-radius: 30px;
+}
+
+
+
+
 
 .main {
     background-color: green;
     grid-column: 2/3;
 }
+
+
+
+
+
+
+
 
 
 
