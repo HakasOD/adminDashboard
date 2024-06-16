@@ -109,6 +109,8 @@ button:hover {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1.5fr;
+    box-shadow: 0px 10px 10px 0 rgba(0,0,0, 0.2);
+    position: relative;
 }
 
 .header .search-bar {
@@ -250,7 +252,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(max(300px, 40%), 1fr));
     grid-template-rows: repeat(3, min(205px));
     gap: 30px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .main .cards .card {
@@ -262,8 +264,10 @@ button:hover {
     border-left: solid 7px var(--banana-yellow);
     overflow: hidden;
     text-overflow: clip;
-    
+    box-shadow: 0px 10px 30px 0 rgba(0,0,0, 0.2);
+
 }
+
 
 .main .cards .card:hover {
   filter: brightness(95%);
@@ -298,6 +302,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     max-height: 35vh;
+    box-shadow: 0px 10px 30px 0 rgba(0,0,0, 0.2);
 }
 
 .main .annoucements .content {
@@ -306,6 +311,7 @@ button:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 3vh;
+    
 }
 
 
